@@ -1,0 +1,127 @@
+* {
+    font-size: medium;
+    color: white;
+}
+
+body {
+    background: darkgray;
+    display: flex;
+    justify-content: center;
+}
+
+.frame {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    aspect-ratio: 9 / 16;
+    min-width: 300px;
+    max-width: 100vmin;
+    max-height: 100vmin;
+    gap: 1vmin;
+}
+
+canvas {
+    border-radius: 1vmin;
+}
+
+.brand, .strain {
+    display: flex;
+}
+
+.species {
+    display: flex;
+}
+
+.btn {
+    flex: 1 1;
+    display: flex;
+}
+
+.btn > label {
+    flex: 1 1;
+    background-color:dimgray;
+    text-align: center;
+    padding: 1vmin;
+}
+
+.btn:first-child > label {
+    border-radius: 2vmin 0 0 2vmin;
+}
+
+.btn:last-child > label {
+    border-radius: 0 2vmin 2vmin 0;
+}
+
+.btn > input {
+    display: none;
+}
+
+.btn > input:checked + label {
+    background-color: teal !important;
+}
+
+.canna {
+    display: flex;
+}
+
+.perc {
+    display: flex;
+    flex: 1 1;
+}
+
+.perc > label {
+    padding: 1vmin;
+    background-color: teal;
+    text-align: right;
+    flex: 1 1;
+}
+
+.perc > input {
+    margin: 0;
+    border: 0;
+    padding: 1vmin;
+    background-color: teal;
+    outline: none;
+    flex: 0 0;
+}
+
+.perc:first-child > label {
+    border-radius: 2vmin 0 0 2vmin;
+}
+
+.perc:last-child > input {
+    border-radius: 0 2vmin 2vmin 0;
+}
+
+input[type=text] {
+    flex: 1 1;
+    margin: 0;
+    border: 0;
+    background-color: teal;
+    padding: 1vmin 2vmin;
+    border-radius: 2vmin;
+    outline: none;
+}
+
+input[type=number] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+}
+
+input:invalid {
+    background-color: crimson;
+}
+
+.download {
+    background-color: teal;
+    text-align: center;
+    padding: 1vmin;
+    border-radius: 2vmin;
+}

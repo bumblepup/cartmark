@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="frame">
+      <canvas class="preview" height="120px" width="400px"></canvas>
+      <div class="brand">
+        <input type="text" id="brand" placeholder="Brand">
+      </div>
+      <div class="strain">
+        <input type="text" id="strain" placeholder="Strain">
+      </div>
+      <div class="species">
+        <div class="btn">
+          <input id="sativa" type="checkbox">
+          <label for="sativa">Sativa</label>
+        </div>
+        <div class="btn">
+          <input id="hybrid" type="checkbox">
+          <label for="hybrid">Hybrid</label>
+        </div>
+        <div class="btn">
+          <input id="indica" type="checkbox">
+          <label for="indica">Indica</label>
+        </div>
+      </div>
+      <div class="canna">
+        <div class="cbd perc">
+          <label>CBD</label>
+          <input type="number" id="cbd" min="0" max="100" value="0" size="3" maxlength="3">
+        </div>
+        <div class="cbg perc">
+          <label>CBG</label>
+          <input type="number" id="cbg" min="0" max="100" value="0" size="3" maxlength="3">
+        </div>
+        <div class="cbn perc">
+          <label>CBN</label>
+          <input type="number" id="cbn" min="0" max="100" value="0" size="3" maxlength="3">
+        </div>
+      </div>
+      <label class="download">Download</label>
+    </div>
+  </body>
+</html>
